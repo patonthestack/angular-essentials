@@ -1,0 +1,13 @@
+<p>My Dashboard Example</p>
+<div>
+  <button (click)='onSwitchState()'>Switch state to finished</button>
+</div>
+<!-- <p>Load State: {{ loadState }}</p> non two way binding-->
+<p [textContent]="loadState"></p>
+<div>
+  <!-- <input type='text' (input)='loadState = $event.target.value'> non two way binding -->
+  <input type='text' [(ngModel)]='loadState'>
+</div>
+
+
+
